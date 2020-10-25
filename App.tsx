@@ -17,10 +17,18 @@ export default function App() {
     await ScreenOrientation.lockAsync(ScreenOrientation.OrientationLock.LANDSCAPE_LEFT);
   }
 
+  let uri;
+
+  if (__DEV__) {
+    uri = 'http://10.0.0.45:8000'
+  } else {
+    uri = 'https://capitol-games.github.io/Frangalia'
+  }
+
   return (
     <React.Fragment>
       {appIsLoaded ? (
-        <WebView source={{ uri: 'http://10.0.0.45:8000' }} />
+        <WebView source={{ uri }} />
       ) : (
         <AppLoading
           startAsync={() => {
