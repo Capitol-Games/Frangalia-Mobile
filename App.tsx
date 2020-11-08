@@ -28,11 +28,10 @@ export default function App() {
   return (
     <React.Fragment>
       {appIsLoaded ? (
-        <WebView source={{ uri }} />
+        <WebView source={{ uri }} cacheEnabled={false} />
       ) : (
         <AppLoading
           startAsync={() => {
-            console.log('Wait until game is loaded.')
             return new Promise((resolve, reject) => {
               setTimeout(() => {
                 resolve();
