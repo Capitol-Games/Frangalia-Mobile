@@ -20,7 +20,7 @@ export default function App() {
   let uri;
 
   if (__DEV__) {
-    uri = 'http://10.0.0.45:8000'
+    uri = 'http://10.0.0.44:8000'
   } else {
     uri = 'https://capitol-games.github.io/Frangalia'
   }
