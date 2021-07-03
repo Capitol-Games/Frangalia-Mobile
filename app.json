@@ -2,7 +2,7 @@
   "expo": {
     "name": "Frangalia",
     "slug": "frangalia",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -20,7 +20,7 @@
       "supportsTablet": true,
       "requireFullScreen": true,
       "bundleIdentifier": "com.capitol-games.frangalia",
-      "buildNumber": "2"
+      "buildNumber": "3"
     },
     "web": {
       "favicon": "./assets/favicon.png"
