@@ -20,4 +20,4 @@ $ expo start
 
 ## Production
 
-The game is deployed as an iOS app with `expo-cli`.
+The game is deployed as an iOS app with `eas submit`.
