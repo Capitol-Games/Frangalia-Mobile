@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { WebView } from 'react-native-webview';
 import * as ScreenOrientation from 'expo-screen-orientation';
-import { AppLoading } from 'expo';
+import AppLoading from 'expo-app-loading'
 
 export default function App() {
   const [appIsLoaded, setAppIsLoaded] = useState(false)
