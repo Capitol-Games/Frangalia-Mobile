@@ -28,11 +28,14 @@ export default function App() {
   return (
     <React.Fragment>
       {appIsLoaded ? (
-        <WebView source={{ uri }} cacheEnabled={false} />
+        <WebView
+          source={{ uri }}
+          cacheEnabled={false}
+        />
       ) : (
         <AppLoading
           startAsync={() => {
-            return new Promise((resolve, reject) => {
+            return new Promise((resolve) => {
               setTimeout(() => {
                 resolve();
               }, 5000)
